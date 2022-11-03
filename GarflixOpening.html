@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="6; url='http://127.0.0.1:5000/p2'" />
+    <title>Garyflix</title>
+
+    <style>
+        body {
+            background: black;
+            overflow: hidden;
+        }
+ 
+        .geeks {
+            position: absolute;
+            width: 100%;
+            top:25%;
+            left:33%;
+            border-bottom: 5px solid black;
+            overflow: hidden;
+            animation: animate 4s linear forwards;
+
+        }
+ 
+        .geeks h1 {
+            color: red;
+            animation: zoom 3s;
+            animation-delay: 4s
+        }
+    
+        @keyframes animate {
+            0% {
+                width: 0px;
+                height: 0px;
+                left: 45%;
+            }
+            30% {
+                width: 80px;
+                height: 0px;
+                left: 45%;
+            }
+            60% {
+                width: 80px;
+                height: 180px;
+                left: 45%;
+            }
+            75% {
+                left: 33%;
+            }    
+        }
+        @keyframes zoom {
+            0% {
+                font-size: 100px;
+            }
+            100% {
+                font-size: 500px;
+                left: 45%;
+            }
+        }
+    </style>
+</head>
+ 
+<body>
+    <div class="geeks">
+        <h1 style="font-size: 100px;" style="font-family: NetflixSans-Bold">Garyflix</h1>
+    </div>
+</body>
+ 
+</html>
