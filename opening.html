@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <!--Refreshes the page and automatically changes to next page after 6 seconds-->
+    <meta http-equiv="refresh" content="6; url='http://127.0.0.1:5000/p2'" />
+    <title>Garyflix</title>
+
+    <style>
+        body {
+            background: black;
+            overflow: hidden;
+        }
+        /*Makes bar to reveal the GARYFLIX logo*/
+        .geeks {
+            position: absolute;
+            width: 100%;
+            top:25%;
+            left:33%;
+            border-bottom: 5px solid black;
+            overflow: hidden;
+            animation: animate 4s linear forwards;
+        }
+        /*GARYFLIX logo under the animation*/
+        .geeks h1 {
+            color: red;
+            animation: zoom 3s;
+            animation-delay: 4s;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+        }
+        /*Animates the bar unveiling the GARYFLIX logo to give it a cool effect*/
+        @keyframes animate {
+            0% {
+                width: 0px;
+                height: 0px;
+                left: 45%;
+            }
+            30% {
+                width: 80px;
+                height: 0px;
+                left: 45%;
+            }
+            60% {
+                width: 80px;
+                height: 180px;
+                left: 45%;
+            }
+            75% {
+                left: 33%;
+            }    
+        }
+        @keyframes zoom {
+            0% {
+                font-size: 100px;
+            }
+            100% {
+                font-size: 500px;
+                left: 45%;
+            }
+        }
+    </style>
+</head>
+ 
+<body>
+    <!-- plays audio of Gary as the opening graphic occurs -->
+    <audio controls autoplay hidden src="../static/Images/GaryVideo (3).mp3"
+    ></audio>
+    <div class="geeks">
+        <h1 style="font-size: 100px;">Garyflix</h1>
+    </div>
+</body>
+ 
+</html>

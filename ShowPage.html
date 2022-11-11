@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Garyflix</title>
+
+<style>
+    /*moves the Show Name, Tags, and Show Trailer to center of screen*/
+    body {
+        background: black;
+        }
+    .h1 {
+        font-weight: bold;
+        color:white;
+        left:40%;
+        top:70%;
+        position:absolute;
+    }
+    .h2 {
+        font-weight:bold;
+        color:white;
+        left: 37%;
+        top:80%;
+        position: absolute;
+    }
+    /* Centers video in screen*/
+    video.center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        }
+</style>
+</head>
+
+<body>
+    <!--Name Of Show And It's Tags-->
+    <h1 class="h1">The Gary Show</h1>
+    <h2 class="h2">Action     • Comedy     • Emotional</h2>
+    <!--Gary Show Trailer-->
+    <video class="center" controls src="..\static\Images\GaryShowTrailer.mov" width="50%" height="300px" text-align="center"></video>
+</body>

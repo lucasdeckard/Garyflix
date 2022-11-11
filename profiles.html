@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Garyflix</title>
+<head>
+    <style>
+
+    /* sets up all of the profiles and moves them to the center of the screen with text under them*/
+        body {
+            background: black;
+            overflow: hidden;
+        }
+        /* Profile Picture One*/
+        .button1 {
+            border: 3px solid white;
+            text-align: justify;
+            width: 75px;
+            position: relative;
+            top: 175px;
+            left: 180px;
+        }
+        /* On hover of profile picture, outline turns red */
+        .button1:hover{
+            border: 3px solid red;
+        }
+        /* Profile Name*/
+        .text {
+            position: relative;
+            top: 160px;
+            left: 190px;
+        }
+        /*Gets rid of Link Highlight */
+        a:link { 
+            text-decoration: none; 
+        }
+        a:visited { 
+            text-decoration: none; 
+        }
+        .button2 {
+            border: 3px solid white;
+            text-align: justify;
+            width: 75px;
+            position: relative;
+            top: 40px;
+            left: 380px;
+        }
+        .button2:hover{
+            border: 3px solid red;
+        }
+        .text2 {
+            position: relative;
+            top: 25px;
+            left: 400px;
+        }
+        .button3 {
+            border: 3px solid white;
+            text-align: justify;
+            width: 75px;
+            position: relative;
+            top: -95px;
+            left: 580px;
+        }
+        .button3:hover{
+            border: 3px solid red;
+        }
+        .text3 {
+            position: relative;
+            top: -110px;
+            left: 595px;
+        }
+        .button4 {
+            border: 3px solid white;
+            text-align: justify;
+            width: 75px;
+            position: relative;
+            top: -230px;
+            left: 765px;
+        }
+        .button4:hover{
+            border: 3px solid red;
+        }
+        .text4 {
+            position: relative;
+            top: -245px;
+            left: 770px;
+        }
+    </style>
+
+</head>
+ 
+<body>
+    <!--Makes Each Profile Picture and Profile Name-->
+        <a href="http://127.0.0.1:5000/p3">   
+    <input class="button1" type="image" name="GaryProfile1" src="\static\Images\GaryProfileImage1.jpeg" width="75" height="75" alt="Garrison">
+    <p class="text"style="color:white;">Garrison</p>
+
+        <a href="http://127.0.0.1:5000/p3">   
+    <input class="button2" type="image" name="GaryProfile1" src="\static\Images\GaryProfilePicture2 (2).jpeg" width="75" height="75" alt="Garrison">
+    <p class="text2"style="color:white;">Gary</p> 
+    
+        <a href="http://127.0.0.1:5000/p3">   
+    <input class="button3" type="image" name="GaryProfile1" src="..\static\Images\GaryProfilePicture3 (2).jpeg" width="75" height="75" alt="Garrison">
+    <p class="text3"style="color:white;">GarBear</p>
+
+        <a href="http://127.0.0.1:5000/p3">   
+    <input class="button4" type="image" name="GaryProfile1" src="..\static\Images\GaryProfilePicture4 (2).jpeg" width="75" height="75" alt="Garrison">
+    <p class="text4"style="color:white;">Gary's Son</p>
+
+</body>
+ 
+
+</html>
